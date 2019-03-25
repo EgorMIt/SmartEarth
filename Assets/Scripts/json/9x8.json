@@ -1,0 +1,77 @@
+{ "width":9, "height":8, 
+"all_points":{ 
+	"dom_kuptsa_vtorova": {"x":2,"y":4, "coords":{"latitude":52.287743943962276, "longitude":104.2848033695738}, "delay_time": 12},
+	"moskvor": {"x":2,"y":0, "coords":{"latitude":52.293569636499676,"longitude":104.2861163320759}, "delay_time": 2},
+	"dom_nartv": {"x":1,"y":6, "coords":{"latitude":52.28449098162401, "longitude":104.28296263815207}, "delay_time": 10}, 
+	"rk_kostel": {"x":0,"y":2, "coords":{"latitude":52.29044582523443, "longitude":104.2824226587894}, "delay_time": 6}, 
+	"irksina": {"x":6,"y":5, "coords":{"latitude":52.29362226422116, "longitude":104.28619143392827}, "delay_time": 6}, 
+	"irkhudmuz": {"x":2,"y":7, "coords":{"latitude":52.28343167946146, "longitude":104.28645133026846}, "delay_time": 15}, 
+	"kazchas": {"x":0,"y":3, "coords":{"latitude":52.29229414323123, "longitude":104.31656734553847}, "delay_time": 4},
+	"dmtru": {"x":8,"y":3, "coords":{"latitude":52.28891636949074, "longitude":104.30183258460839}, "delay_time": 10}, 
+	"exvt": {"x":5,"y":3, "coords":{"latitude":52.289820253380476, "longitude":104.29382369842925}, "delay_time": 4}, 
+	"mpooh": {"x":7,"y":6, "coords":{"latitude":52.28393493302062, "longitude":104.29828232208679}, "delay_time": 8} 
+	},
+"chosen_points":{ 
+	"dom_kuptsa_vtorova": {"x":2,"y":4, "coords":{"latitude":52.287743943962276, "longitude":104.2848033695738}, "delay_time": 12},
+	"moskvor": {"x":2,"y":0, "coords":{"latitude":52.293569636499676,"longitude":104.2861163320759}, "delay_time": 2},
+	"dom_nartv": {"x":1,"y":6, "coords":{"latitude":52.28449098162401, "longitude":104.28296263815207}, "delay_time": 10}, 
+	"rk_kostel": {"x":0,"y":2, "coords":{"latitude":52.29044582523443, "longitude":104.2824226587894}, "delay_time": 6}, 
+	"irksina": {"x":6,"y":5, "coords":{"latitude":52.29362226422116, "longitude":104.28619143392827}, "delay_time": 6}, 
+	"irkhudmuz": {"x":2,"y":7, "coords":{"latitude":52.28343167946146, "longitude":104.28645133026846}, "delay_time": 15}, 
+	"kazchas": {"x":0,"y":3, "coords":{"latitude":52.29229414323123, "longitude":104.31656734553847}, "delay_time": 4},
+	"dmtru": {"x":8,"y":3, "coords":{"latitude":52.28891636949074, "longitude":104.30183258460839}, "delay_time": 10}, 
+	"exvt": {"x":5,"y":3, "coords":{"latitude":52.289820253380476, "longitude":104.29382369842925}, "delay_time": 4}, 
+	"mpooh": {"x":7,"y":6, "coords":{"latitude":52.28393493302062, "longitude":104.29828232208679}, "delay_time": 8} 
+	},
+"graphs": {
+		"graph_1": {
+			"edges": [
+				{"from": "dmtru", "to": "exvt"},
+				{"from": "exvt", "to": "irksina"},
+				{"from": "irksina", "to": "mpooh"},
+				{"from": "mpooh", "to": "dom_nartv"},
+				{"from": "dom_nartv", "to": "irkhudmuz"},
+				{"from": "irkhudmuz", "to": "moskvor"},
+				{"from": "moskvor", "to": "rk_kostel"},
+				{"from": "rk_kostel","to": "kazchas"},
+				{"from": "kazchas", "to": "dom_kuptsa_vtorova"}]
+		},
+		"graph_2": {
+			"edges": [
+				{"from": "exvt", "to": "rk_kostel"},
+				{"from": "rk_kostel", "to": "moskvor"},
+				{"from": "moskvor", "to": "dom_kuptsa_vtorova"},
+				{"from": "dom_kuptsa_vtorova", "to": "kazchas"},
+				{"from": "kazchas", "to": "dom_nartv"},
+				{"from": "dom_nartv", "to": "irkhudmuz"},
+				{"from": "irkhudmuz", "to": "mpooh"},
+				{"from": "mpooh","to": "dmtru"},
+				{"from": "dmtru", "to": "irksina"}]
+		},
+		"graph_3": {
+			"edges": [
+				{"from": "dom_nartv", "to": "dom_kuptsa_vtorova"},
+				{"from": "dom_kuptsa_vtorova", "to": "irkhudmuz"},
+				{"from": "irkhudmuz", "to": "moskvor"},
+				{"from": "moskvor", "to": "rk_kostel"},
+				{"from": "rk_kostel", "to": "kazchas"},
+				{"from": "kazchas", "to": "irksina"},
+				{"from": "irksina", "to": "exvt"},
+				{"from": "exvt", "to": "mpooh"},
+				{"from": "mpooh", "to": "dmtru"}]
+		},
+		"graph_4": {
+			"edges": [
+				{"from": "mpooh", "to": "dmtru"},
+				{"from": "dmtru", "to": "exvt"},
+				{"from": "exvt", "to": "irksina"},
+				{"from": "irksina", "to": "dom_kuptsa_vtorova"},
+				{"from": "dom_kuptsa_vtorova", "to": "kazchas"},
+				{"from": "kazchas", "to": "moskvor"},
+				{"from": "moskvor", "to": "rk_kostel"},
+				{"from": "rk_kostel", "to": "irkhudmuz"},
+				{"from": "irkhudmuz", "to": "dom_nartv"}]
+		}
+
+	}
+}
